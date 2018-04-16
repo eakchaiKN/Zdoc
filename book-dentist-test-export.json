@@ -1,0 +1,39 @@
+{
+  "clinics" : [ null, {
+    "clinic_address" : "104/106 Rat-U- Thit 200 Pee Rd., Patong",
+    "clinic_email" : "friendly@gmail.com",
+    "clinic_id" : "sUhwi8DXTMeRqCmDCu2zVWsuRGD2",
+    "clinic_image" : "https://firebasestorage.googleapis.com/v0/b/book-dentist.appspot.com/o/test3clinic.jpg?alt=media&token=00d2786c-6e05-48fc-8ccb-c87924374980",
+    "clinic_name" : "Friendly Dental Clinic",
+    "clinic_phone" : "123-456-789",
+    "closed_time" : [ {
+      "date" : "1-1-2018",
+      "time" : "14:00"
+    } ],
+    "location" : {
+      "latitude" : 7.899811999999999,
+      "longitude" : 98.30003099999999
+    },
+    "staff" : [ {
+      "name" : "Jane Doe",
+      "phone" : "888-555-1212",
+      "role" : "doctor"
+    }, {
+      "name" : "Justin Doe",
+      "phone" : "877-123-1212",
+      "role" : "doctor"
+    } ],
+    "time_slot" : {
+      "book_per_slot" : 1,
+      "fri" : [ "8.00", "9.00", "10.00" ],
+      "hours_scale" : 1,
+      "mon" : [ "8.00", "9.00", "10.00", "11.00", "13.00", "14.00", "15.00", "16.00" ],
+      "sat" : [ "8.00", "9.00", "10.00" ],
+      "sun" : [ "8.00", "9.00", "10.00" ],
+      "thu" : [ "8.00", "9.00", "10.00" ],
+      "tue" : [ "8.00", "9.00", "10.00" ],
+      "wed" : [ "8.00", "9.00", "10.00" ]
+    },
+    "work_hour" : [ "8am - 4pm", "8am - 4pm", "8am - 4pm", "8am - 4pm", "8am - 4pm", "8am - 4pm", "8am - 4pm", "closed" ]
+  } ]
+}
