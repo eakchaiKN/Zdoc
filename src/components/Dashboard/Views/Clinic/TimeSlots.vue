@@ -4,32 +4,135 @@
       <h4 class="title">Time Slots</h4>
     </div>
     <!--
-<p v-for="d in data.booking_time_slots" v-bind:key="d['.key']">{{d}}</p>
--->
+      <p v-for="d in data.booking_time_slots" v-bind:key="d['.key']">{{d}}</p>
+      -->
     <div class="content">
       <form>
-        <div class="panel-body">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Fri</th>
-                <th>Sat</th>
-                <th>Sun</th>
 
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="d in data.booking_time_slots.mon" v-bind:key="d['.key']">
-                <td><a>{{d}}</a></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="content table-responsive table-full-width">
+<div class="col-md-2"></div>
+          <div class="col-md-1">
+            <table class="table" :class="tableClass">
+              <thead>
+                <tr>
+                  <th>Mon</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="d in data.booking_time_slots.mon" v-bind:key="d['.key']">
+                  <td><button type="button" class="btn btn-round btn-block btn-outline-default"><!---->{{d}}</button></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-1">
+            <table class="table" :class="tableClass">
+              <thead>
+                <tr>
+                  <th>Tue</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="d in data.booking_time_slots.tue" v-bind:key="d['.key']">
+                  <td><button type="button" class="btn btn-round btn-block btn-outline-default"><!---->{{d}}</button></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-1">
+            <table class="table" :class="tableClass">
+              <thead>
+                <tr>
+                  <th>Wed</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="d in data.booking_time_slots.wed" v-bind:key="d['.key']">
+                  <td><button type="button" class="btn btn-round btn-block btn-outline-default"><!---->{{d}}</button></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+
+          <div class="col-md-1">
+            <table class="table" :class="tableClass">
+              <thead>
+                <tr>
+                  <th>Thu</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="d in data.booking_time_slots.thu" v-bind:key="d['.key']">
+                  <td><button type="button" class="btn btn-round btn-block btn-outline-default"><!---->{{d}}</button></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-1">
+            <table class="table" :class="tableClass">
+              <thead>
+                <tr>
+                  <th>Fri</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="d in data.booking_time_slots.fri" v-bind:key="d['.key']">
+                  <td><button type="button" class="btn btn-round btn-block btn-outline-default"><!---->{{d}}</button></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-1">
+            <table class="table" :class="tableClass">
+              <thead>
+                <tr>
+                  <th>Sat</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="d in data.booking_time_slots.sat" v-bind:key="d['.key']">
+                  <td><button type="button" class="btn btn-round btn-block btn-outline-default"><!---->{{d}}</button></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-1">
+            <table class="table" :class="tableClass">
+              <thead>
+                <tr>
+                  <th>Sun</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="d in data.booking_time_slots.sun" v-bind:key="d['.key']">
+                  <td><button type="button" class="btn btn-round btn-block btn-outline-default"><!---->{{d}}</button></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+
+          <div class="clearfix"></div>
         </div>
-        <div class="clearfix"></div>
       </form>
     </div>
   </div>
